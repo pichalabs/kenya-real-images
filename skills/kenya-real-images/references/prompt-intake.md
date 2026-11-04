@@ -37,7 +37,8 @@ Everything else (adjectives, quality words, camera gear, lighting jargon, weight
 | Empty placeholders: `[STYLE]`, `[MOOD]`, `[PLATFORM]` | Pick sensible defaults. Never write the brackets into the prompt. |
 | "everyone looking at the camera", "perfect smiles", "confident pose" | Only for a group photo or portrait that is meant to be posed. Otherwise people look at each other or at what they are doing. |
 | exotic, ebony, tribal, warrior, poor child, sad eyes, mud huts, "Africa" as a place | Apply the avoid-words table in `people.md`, keep the user's real intent (a rural child, a Maasai elder, a village), shown with dignity and specific detail. |
-| brand logos (Apple, Safaricom, Nike...), readable notes, strategy boards, slides with words | Leave logos out: laptops seen from the side or behind, plain clothing. Boards, screens and notes show soft shapes or blurred charts, never readable words, unless the user gave the exact short text that must appear (like an ad headline). |
+| brand logos (Apple, Safaricom, Nike...) | Don't add logos on your own. If the user asks for a specific brand, keep it. |
+| readable notes, strategy boards, slides with words | Never invent readable text. Boards, screens and notes show soft shapes or blurred charts, unless the user wrote the exact short words that must appear (like an ad headline); then use only those words. "Readable notes" without the words means soft, unreadable writing. |
 | real landmarks (KICC, Nairobi skyline) | Keep if it really matters to the place, small and in the background. |
 | poor, poverty, needy, suffering, starving, sad eyes, empty bowl, torn clothes, dusty face, charity campaign, "help Africa" | See section 3b. Never build the image from these. |
 
