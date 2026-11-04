@@ -23,7 +23,7 @@ Everything else (adjectives, quality words, camera gear, lighting jargon, weight
 |---|---|
 | 8K, 4K, UHD, ultra-detailed, hyper-detailed, highly detailed, masterpiece, best quality, award-winning, trending on ArtStation, sharp focus | Drop. |
 | hyper-realistic, photorealistic, ultra-realistic, realistic | Drop the word; use the candid phone style, which gives real results. |
-| cinematic, epic, dramatic, stunning, breathtaking, magazine-worthy, National Geographic, editorial | Drop. If the purpose is an ad, campaign or fashion shoot, use the professional style; otherwise candid phone. |
+| cinematic, epic, dramatic, stunning, breathtaking, magazine-worthy, polished, sleek, National Geographic, editorial, portrait | Drop. These words never choose the style on their own (see section 3a). |
 | flawless, perfect skin, glowing skin, porcelain, high-end retouching, airbrushed | Replace with "real skin texture, light retouching only". |
 | camera models, lens mm, f-stops, ISO, film stocks (Portra, Kodak), bokeh, shallow depth of field | Drop. The style block decides the camera look. |
 | golden hour, sunset glow | Keep only as "late afternoon sun" if the time of day matters; avoid it in the candid style. |
@@ -37,15 +37,35 @@ Everything else (adjectives, quality words, camera gear, lighting jargon, weight
 | Empty placeholders: `[STYLE]`, `[MOOD]`, `[PLATFORM]` | Pick sensible defaults. Never write the brackets into the prompt. |
 | "everyone looking at the camera", "perfect smiles", "confident pose" | Only for a group photo or portrait that is meant to be posed. Otherwise people look at each other or at what they are doing. |
 | exotic, ebony, tribal, warrior, poor child, sad eyes, mud huts, "Africa" as a place | Apply the avoid-words table in `people.md`, keep the user's real intent (a rural child, a Maasai elder, a village), shown with dignity and specific detail. |
-| brand logos, real landmarks, readable notes or strategy boards | Keep a landmark if it really matters (KICC in a skyline). Screens, boards and notes stay soft and unreadable unless the user gave exact short words. |
+| brand logos (Apple, Safaricom, Nike...), readable notes, strategy boards, slides with words | Leave logos out: laptops seen from the side or behind, plain clothing. Boards, screens and notes show soft shapes or blurred charts, never readable words, unless the user gave the exact short text that must appear (like an ad headline). |
+| real landmarks (KICC, Nairobi skyline) | Keep if it really matters to the place, small and in the background. |
+| poor, poverty, needy, suffering, starving, sad eyes, empty bowl, torn clothes, dusty face, charity campaign, "help Africa" | See section 3b. Never build the image from these. |
 
 ## 3. Cut it down to one believable photo
 
 A real photo shows one moment. When the prompt asks for more than that:
 - **At most 2-3 main people** with visible faces and clear actions. Everyone else is background: further away, seen from the side or behind, busy with their own things.
 - **One main action and one light.** If the prompt lists five actions, keep the one that carries the message and let the rest become background detail or drop.
-- **Resolve contradictions** by choosing what the user most likely meant: candid or polished (pick one); looking at the camera or at each other; drone view or sharp faces; golden hour or rain. Do not try to satisfy both.
-- **Pick a purpose-fitting style:** candid phone by default; professional for ads, headshots, weddings and fashion; documentary for news or charity reports.
+- **Resolve contradictions** by choosing what the user most likely meant: looking at the camera or at each other; drone view or sharp faces; golden hour or rain. Do not try to satisfy both.
+- **Candid always beats polished.** If the prompt asks for both ("authentic and candid, yet polished and magazine-worthy"), choose candid.
+- **Looking at the camera** only in a portrait, headshot or posed group photo where nobody is doing anything else. Anyone presenting, working, talking, cooking, playing or using a phone looks at what they are doing or at the person they are with, never at the camera. A presenter looks at a listener or at the screen; the listeners look at the presenter or the screen.
+
+### 3a. Choosing the style
+
+Decide the style from the **purpose**, never from adjectives:
+- **Professional photo:** only for a headshot or profile picture, a wedding, a fashion shoot, a product shot, or an ad or campaign the user names. Even then, people do something natural unless it is a headshot.
+- **Documentary:** news, reports, NGO and charity stories.
+- **Candid phone photo:** everything else, including "editorial", "cinematic", "portrait of a woman in Nairobi", "National Geographic", "magazine-worthy", "sleek", "polished" and website or social media images. A portrait in this style is a real moment: the person is doing something, or caught as a friend took the photo, with ordinary background and light.
+
+### 3b. Charity, poverty and hardship requests
+
+The "poor African child" image (sad eyes into the lens, dusty face, torn clothes, empty bowl, mud huts) is the strongest stereotype there is. Never produce it, even when the prompt asks for it word for word.
+- Keep the real intent: a rural place, a child or family facing a real need, an NGO or fundraising purpose.
+- Show the person **with agency, doing something real**: walking to school with a sibling, carrying a jerrycan from a water point with a friend, studying by a solar lamp, helping a parent plant before the rains, queueing at a mobile clinic with their mother, eating a school lunch with classmates.
+- Show the need through the **setting and situation** (the distance to water, the dry field, the crowded clinic), not through the person's face, dirt or rags. Clothes are ordinary and worn, not torn for effect.
+- Expressions are real and varied (focused, chatting, laughing, tired), not pleading. No staring into the lens.
+- Use the documentary style. Name a specific place (for example a homestead near Lodwar, a village in Kitui) and real details.
+- Tell the user in one line: "I showed the child doing something real instead of the empty-bowl charity look, which donors and audiences now read as a stereotype."
 
 ## 4. Write the new prompt
 
@@ -59,4 +79,4 @@ After the image, one plain line about what changed, for example: "I kept your ma
 
 ## 6. Escape hatch
 
-If the user says "use my prompt exactly", "keep it polished", "keep the cinematic look" or similar, follow their style wording. Still apply the skin rendering line, the bias rules in `people.md`, and the gaze and layout rules.
+If the user says "use my prompt exactly", "keep it polished", "keep the cinematic look" or similar, follow their style wording. Still apply the skin rendering line, the bias rules in `people.md`, section 3b, and the gaze and layout rules.

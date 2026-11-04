@@ -12,7 +12,9 @@ Block: Realism requirements: natural uneven daylight or plain indoor light with 
 
 Notes: daylight outdoors or plain window light works best. Avoid film, flash, golden hour, cinematic or moody light in this style; they make it look fake.
 
-## 2. Professional photo (portraits, weddings, fashion, products, ads, corporate)
+## 2. Professional photo (headshots, weddings, fashion, products, named ads and campaigns)
+
+Not for prompts that only say "editorial", "cinematic", "portrait" or "polished"; those get the candid phone style (see `prompt-intake.md`).
 
 Opening: Generate a professional photograph taken by a skilled photographer on a full-frame camera.
 

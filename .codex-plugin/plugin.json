@@ -1,6 +1,6 @@
 {
     "name":  "kenya-real-images",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description":  "Generate natural, believable images of Kenyan people and places for any purpose, with correct eye lines, pointing and room layouts.",
     "author":  {
                    "name":  "PichaLabs",

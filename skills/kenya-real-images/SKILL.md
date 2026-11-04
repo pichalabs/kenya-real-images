@@ -19,7 +19,7 @@ Read these references before the first image in a conversation:
 
 ## The user's prompt is a brief, not the prompt
 
-Never pass the user's wording straight to the image model. Long prompts written by ChatGPT or copied from prompt guides ("ultra-realistic 8K cinematic", lens specs, "flawless skin", `--ar`, JSON, negative prompts, ten people doing ten things) produce the glossy AI look. Take out the intent (who, where, doing what, for what, format, exact text), drop the rest using `prompt-intake.md`, and write a fresh prompt of about 120-180 words. Unless the user says "use my prompt exactly" or asks for a polished look.
+Never pass the user's wording straight to the image model. Long prompts written by ChatGPT or copied from prompt guides ("ultra-realistic 8K cinematic", lens specs, "flawless skin", `--ar`, JSON, negative prompts, ten people doing ten things) produce the glossy AI look. Take out the intent (who, where, doing what, for what, format, exact text), drop the rest using `prompt-intake.md`, and write a fresh prompt of about 120-180 words. Choose the style from the purpose, not from adjectives; candid beats polished; nobody looks at the camera while doing something; no logos or readable notes unless exact words are given; never the "poor child with empty bowl" charity image. Unless the user says "use my prompt exactly" (the bias and charity rules still apply).
 
 ## Workflow
 
