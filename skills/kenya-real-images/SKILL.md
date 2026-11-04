@@ -27,10 +27,11 @@ Never pass the user's wording straight to the image model. Long prompts written 
 2. **Pick a style** from `styles.md`. Default to the candid phone photo when the user just wants it to look real.
 3. **Lay out the scene first:** where each person is, which way they face, the shape of the room or street, the furniture layout, and where the camera stands (`gaze-and-space.md`).
 4. **Build the prompt** with the structure below. Write it fresh for each image.
-5. **For several images,** first show a short list (number, subject, place, style), then generate one at a time. Vary people, ages, places and camera positions.
-6. **Check every image** (see Check) and say in one line what is off and how you would fix it.
-7. **Fix, don't retry.** When the user says something looks fake or off, regenerate with a sentence that names the exact fix. Never resend the same prompt.
-8. **Files.** When working in a folder, save each image with a short descriptive name, keep replaced versions in `v1/`, `v2/`, and keep `prompts.md` with every prompt used.
+5. **Run the final prompt check below on your written prompt, every time, before calling the image tool.**
+6. **For several images,** first show a short list (number, subject, place, style), then generate one at a time. Vary people, ages, places and camera positions.
+7. **Check every image** (see Check) and say in one line what is off and how you would fix it.
+8. **Fix, don't retry.** When the user says something looks fake or off, regenerate with a sentence that names the exact fix. Never resend the same prompt.
+9. **Files.** When working in a folder, save each image with a short descriptive name, keep replaced versions in `v1/`, `v2/`, and keep `prompts.md` with every prompt used.
 
 ## Prompt structure
 
@@ -43,6 +44,20 @@ Never pass the user's wording straight to the image model. Long prompts written 
 7. **Camera:** position, height, view (square-on or corner), distance, and a foreground element for candid shots. Keep the camera level.
 8. **Skin rendering line** from `people.md`.
 9. **Style block** from `styles.md`, with the aspect ratio for the use.
+
+## Final prompt check (before every image)
+
+Read the prompt you wrote, line by line, and fix it before generating. The user's wording often slips back in; this check catches it. Apply it even when the user's prompt asked for these things, unless they said "use my prompt exactly".
+
+1. **Camera:** delete "low angle", "high angle", "Dutch tilt", "tilted", "drone", "fisheye", "dramatic angle". The camera is level, at standing or seated eye height.
+2. **Light on faces:** delete any coloured, neon, monitor or rim light on faces or skin. Coloured light may only touch a wall or background object.
+3. **Gaze:** if anyone is presenting, working, talking, cooking, playing or using a phone, delete "looks at the camera", "faces the camera", "smiles at the camera" for everyone in the scene. They look at what they are doing or at each other.
+4. **Text:** delete every quoted word or phrase that the user did not write themselves. Boards, screens and notes then have "soft, unreadable writing".
+5. **Jargon:** delete quality words (8K, hyper-realistic, masterpiece, cinematic, magazine-worthy, sleek, futuristic, stunning), camera and lens specs, HDR, golden hour glow, flawless or perfect skin.
+6. **Bias:** delete poor, needy, sad eyes, empty bowl, torn clothes, exotic, tribal, ebony, "African" as a place; the charity image follows `prompt-intake.md` section 3b.
+7. **Size:** at most 3 main people with visible faces; about 120-180 words.
+
+If any line was deleted, mention it in your one-line note to the user.
 
 ## Core rules
 
