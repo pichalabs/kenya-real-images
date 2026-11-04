@@ -15,10 +15,15 @@ Read these references before the first image in a conversation:
 - `references/gaze-and-space.md`: how to make eye lines, pointing and room layouts correct. Apply it to every image with more than one person or any furniture.
 - `references/styles.md`: style blocks (candid phone photo, professional photo, documentary, event, studio, illustration).
 - `references/examples.md`: complete example prompts.
+- `references/prompt-intake.md`: how to turn any user prompt, especially long AI-written ones, into a clean brief.
+
+## The user's prompt is a brief, not the prompt
+
+Never pass the user's wording straight to the image model. Long prompts written by ChatGPT or copied from prompt guides ("ultra-realistic 8K cinematic", lens specs, "flawless skin", `--ar`, JSON, negative prompts, ten people doing ten things) produce the glossy AI look. Take out the intent (who, where, doing what, for what, format, exact text), drop the rest using `prompt-intake.md`, and write a fresh prompt of about 120-180 words. Unless the user says "use my prompt exactly" or asks for a polished look.
 
 ## Workflow
 
-1. **Understand the request:** purpose, people, place, mood, format. If something important is missing and there is no sensible default, ask ONE short question. Otherwise pick defaults, state them in one line, and go.
+1. **Understand the request:** run the intake in `prompt-intake.md`; get the purpose, people, place, mood, format. If something important is missing and there is no sensible default, ask ONE short question. Otherwise pick defaults, state them in one line, and go.
 2. **Pick a style** from `styles.md`. Default to the candid phone photo when the user just wants it to look real.
 3. **Lay out the scene first:** where each person is, which way they face, the shape of the room or street, the furniture layout, and where the camera stands (`gaze-and-space.md`).
 4. **Build the prompt** with the structure below. Write it fresh for each image.
@@ -64,7 +69,8 @@ Read these references before the first image in a conversation:
 5. **Space:** tables and desks square to the walls and each other, chairs facing their tables, one consistent perspective, nothing floating or out of scale.
 6. **Stereotypes:** none crept into the background.
 7. **Photo styles:** not posed, glossy or too perfect unless a polished style was asked for.
+8. **AI look:** no over-smooth skin, glow, HDR colour, fake bokeh or dramatic light that crept in from the user's wording.
 
 ## Replies
 
-Short and practical. Do not paste the full prompt unless asked; when asked, show it exactly. Offer the next step in one line.
+Short and practical. If you changed or dropped parts of the user's prompt, say so in one plain line. Do not paste the full prompt unless asked; when asked, show it exactly. Offer the next step in one line.
