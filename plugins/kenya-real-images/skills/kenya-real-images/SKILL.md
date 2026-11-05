@@ -16,6 +16,7 @@ Read these references before the first image in a conversation:
 - `references/styles.md`: style blocks (candid phone photo, professional photo, documentary, event, studio, illustration).
 - `references/examples.md`: complete example prompts.
 - `references/prompt-intake.md`: how to turn any user prompt, especially long AI-written ones, into a clean brief.
+- `references/uploaded-photos.md` (beta): when the user attaches photos of a real person to put them in a new scene.
 
 ## The user's prompt is a brief, not the prompt
 
@@ -68,11 +69,11 @@ If any line was deleted, mention it in your one-line note to the user.
 - **Skin must be rendered correctly:** properly exposed, natural undertones, real texture, no grey, ashy or orange cast, no lightening, no plastic shine.
 - **Eyes, hands and furniture must make sense in space** (see `gaze-and-space.md`).
 - **Text:** keep signs, screens and documents soft or out of frame unless the user wants specific words; then give the exact words in quotes and keep them short.
-- **Real people:** never make anyone resemble a celebrity or public figure. Build a character from a real person's photos only when the user says that person agreed. In fashion, nightlife or swimwear scenes, everyone is clearly an adult.
+- **Real people:** never make anyone resemble a celebrity or public figure. Use a real person's photos only as `uploaded-photos.md` describes (their own photos, or someone who agreed). In fashion, nightlife or swimwear scenes, everyone is clearly an adult.
 
 ## Same person across several images
 
-- **From real photos:** ask for 4-6 photos (front, profile, three-quarter, half body, full body) and confirmation the person agreed. Crop 2-3 tight face close-ups if you can run code. Write an identity block (face shape, eyes, nose, lips, hairline and hair, facial hair, skin tone and undertone, height, build, regular accessories), describing face and body separately and saying what they are NOT ("face not long or angular", "do not make him heavier than in the photos"). Show it to the user, then paste it word for word into every scene with: "Use the attached photos ONLY for identity. Do NOT copy their expression, head angle, pose, framing, lighting, background or clothing."
+- **From real photos (beta):** when the user attaches photos of a person, follow `references/uploaded-photos.md`: one fast pass, no character sheet. Work with whatever photos they gave; more angles (front, profile, full body) help, so mention that once if there is only one photo. Reuse the same identity block word for word for every later image of that person.
 - **Invented person:** first make a character sheet on a plain light-grey backdrop (full body front, side and back, plus front and side headshots, neutral face, mouth closed), then use it the same way. Vary expressions per scene.
 
 ## Check after every image

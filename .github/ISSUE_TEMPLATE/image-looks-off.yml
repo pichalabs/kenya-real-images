@@ -1,0 +1,50 @@
+name: An image looks off
+description: Report an image that looks fake, stereotyped or wrong.
+title: "[Image] "
+labels: ["image-feedback"]
+body:
+  - type: textarea
+    id: prompt
+    attributes:
+      label: The prompt you typed
+      description: Paste it exactly as you typed it, even if it was long or written by ChatGPT.
+    validations:
+      required: true
+  - type: textarea
+    id: image
+    attributes:
+      label: The image
+      description: Drag and drop the image here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: problem
+    attributes:
+      label: What looks off?
+      options:
+        - label: Face or likeness (with my own photos)
+        - label: Body shape or proportions
+        - label: Skin (grey, ashy, orange, too light, shiny)
+        - label: Eyes or pointing don't land on the right thing
+        - label: Room layout, tables or perspective
+        - label: Stereotype or bias
+        - label: Looks AI-made, glossy or staged
+        - label: Text or logos in the image
+        - label: Other
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else?
+      description: What did you expect to see?
+  - type: dropdown
+    id: photos
+    attributes:
+      label: Did you attach your own photos?
+      options:
+        - "No"
+        - "Yes"
+  - type: input
+    id: where
+    attributes:
+      label: Where did you use it?
+      placeholder: Codex app, Codex CLI, ...

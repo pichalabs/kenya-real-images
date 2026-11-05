@@ -1,0 +1,20 @@
+{
+  "name": "pichalabs",
+  "interface": {
+    "displayName": "PichaLabs"
+  },
+  "plugins": [
+    {
+      "name": "kenya-real-images",
+      "source": {
+        "source": "local",
+        "path": "./plugins/kenya-real-images"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Design"
+    }
+  ]
+}

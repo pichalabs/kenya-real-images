@@ -1,6 +1,6 @@
 {
     "name":  "kenya-real-images",
-    "version": "0.4.3",
+    "version": "1.0.0-beta.1",
     "description":  "Generate natural, believable images of Kenyan people and places for any purpose, with correct eye lines, pointing and room layouts.",
     "author":  {
                    "name":  "PichaLabs",
@@ -20,7 +20,7 @@
     "interface":  {
                       "displayName":  "Kenya Real Images",
                       "shortDescription":  "Natural, believable images of Kenyan people and places.",
-                      "longDescription":  "Image models fall back on stereotypes of African people and make spatial mistakes that feel wrong at a glance: eyes that don\u0027t land on the person they look at, pointing that misses its target, and furniture at odd angles to the room. This plugin describes Kenyans as real, varied individuals anchored to real places, renders every skin tone correctly, lays out people, furniture and camera before writing gaze, and checks and fixes each image. Works for everyday photos, family portraits, weddings, fashion, news, education, business, social media and illustration, and can keep the same person consistent across scenes.",
+                      "longDescription":  "Image models fall back on stereotypes of African people and make spatial mistakes that feel wrong at a glance: eyes that don\u0027t land on the person they look at, pointing that misses its target, and furniture at odd angles to the room. This plugin describes Kenyans as real, varied individuals anchored to real places, renders every skin tone correctly, lays out people, furniture and camera before writing gaze, and checks and fixes each image. It rewrites long AI-generated prompts into plain briefs so results look like real photos, not glossy AI images. Works for everyday photos, family portraits, weddings, fashion, news, education, business, social media and illustration. Beta: put yourself (or someone who agreed) into a new scene from your own photos.",
                       "developerName":  "PichaLabs",
                       "category":  "Design",
                       "capabilities":  [
