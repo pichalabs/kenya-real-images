@@ -9,7 +9,8 @@ Never pass the user's wording through to the image model. Read it, take out what
 Keep only these, whatever format the prompt is in:
 - **Who:** the people and their roles, ages, relationships.
 - **Where:** the place, and the time of day if it matters to the story.
-- **Doing what:** the one main action or moment.
+- **Doing what:** the one main action or moment. Keep the user's key verbs ("watching", "racing past", "teaching").
+- **Main subject:** what the image is about. It may be a car, animal, event or place, not a person.
 - **What it is for:** personal, social media, website, ad, poster, article, book.
 - **Format:** aspect ratio or size.
 - **Exact text** that must appear in the image, in quotes.
@@ -45,7 +46,7 @@ Everything else (adjectives, quality words, camera gear, lighting jargon, weight
 ## 3. Cut it down to one believable photo
 
 A real photo shows one moment. When the prompt asks for more than that:
-- **At most 2-3 main people** with visible faces and clear actions. Everyone else is background: further away, seen from the side or behind, busy with their own things.
+- **At most 2-3 main people** with visible faces and clear actions, and none at all when the main subject is not a person. Everyone else is background: further away, seen from the side or behind, busy with their own things.
 - **One main action and one light.** If the prompt lists five actions, keep the one that carries the message and let the rest become background detail or drop.
 - **Resolve contradictions** by choosing what the user most likely meant: looking at the camera or at each other; drone view or sharp faces; golden hour or rain. Do not try to satisfy both.
 - **Candid always beats polished.** If the prompt asks for both ("authentic and candid, yet polished and magazine-worthy"), choose candid.
@@ -55,6 +56,7 @@ A real photo shows one moment. When the prompt asks for more than that:
 
 Decide the style from the **purpose**, never from adjectives:
 - **Professional photo:** only for a headshot or profile picture, a wedding, a fashion shoot, a product shot, or an ad or campaign the user names. Even then, people do something natural unless it is a headshot.
+- **Sports and action:** races, rallies, matches, anything moving fast.
 - **Documentary:** news, reports, NGO and charity stories.
 - **Candid phone photo:** everything else, including "editorial", "cinematic", "portrait of a woman in Nairobi", "National Geographic", "magazine-worthy", "sleek", "polished" and website or social media images. A portrait in this style is a real moment: the person is doing something, or caught as a friend took the photo, with ordinary background and light.
 

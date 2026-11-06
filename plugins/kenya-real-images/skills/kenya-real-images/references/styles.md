@@ -32,7 +32,13 @@ Block: Documentary requirements: available light only, people absorbed in what t
 
 Opening: Generate a candid event photo taken from a distance on a telephoto lens by a photographer the subjects have not noticed.
 
-Block: Look and feel: flat, slightly hazy light, low contrast, muted colours, matte skin with natural texture, no glow, people caught mid-step or mid-laugh interacting with each other, never walking toward the camera like a fashion shoot, other people partly cut off at the edges and crossing in front.
+Block: Look and feel: the real light and colour of that place and hour, matte skin with natural texture, no glow, people absorbed in the event with a natural mix of expressions, never walking toward the camera like a fashion shoot, other people partly cut off at the edges and crossing in front.
+
+## 4b. Sports and action photo (rallies, races, football, athletics, anything moving fast)
+
+Opening: Generate a sports press photograph taken from the side of the action on a long lens, at the peak moment.
+
+Block: Look and feel: bright natural light with true, full colour, the moving subject sharp and large in the frame, real motion such as flying dust, gravel, mud, spray or grass, a clear sense of speed, spectators smaller and behind the barrier, natural skin texture, no glow, no HDR.
 
 ## 5. Studio portrait or character sheet
 

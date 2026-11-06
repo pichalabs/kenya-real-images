@@ -37,6 +37,13 @@ Eyes in small, mid-distance faces often look wrong. If eye contact matters, fram
 - Say the audience's bodies face that position: "chairs in rows facing the front-left where the speaker stands; most heads turned toward her".
 - Give 1-2 listeners a different, specific action (writing notes, whispering to a neighbour) so the crowd isn't a wall of identical stares.
 
+### 7b. Spectators watching something
+When people watch a race, match, parade or performance, they all watch the same thing:
+- Name the one target and its position in the frame, and say every spectator's head and eyes follow it: "all spectators face the road and their heads turn to follow the car as it passes".
+- Show watching with real actions: filming on a raised phone, shading their eyes, leaning forward, cheering, a hand over the mouth.
+- Nobody faces away from the action or chats with their back to it. At most one person glances at a neighbour, and only while still mostly facing the action.
+- Spectators stand close to the barrier, facing the action.
+
 ### 8. Pointing
 Arm, finger, eyes and target must line up:
 - Name the target and make sure it is in the frame.

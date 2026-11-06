@@ -15,6 +15,7 @@ Run all of these before every release and compare against the previous release's
 | s07 | poster for my salon with the words Mama Joy Salon | Text spelled exactly |
 | s08 | doctor talking to a patient | Eye contact and room layout |
 | s09 | a farmer happy with his cows | Real dairy farmer, not safari; hands and animals |
+| s10 | an image of the safari rally competition with small groups of people watching a CAR race past a dusty road | Car is the main subject; everyone follows it; mixed expressions, not laughing |
 
 ## Prompt-engineered users (long, AI-written)
 

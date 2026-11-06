@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0-beta.2 (2026-11-06)
+
+- **Main subject first:** when an image is about a car, event, animal or place, that thing dominates the frame and people become context.
+- **Spectator rule:** people watching something all follow it with their heads and eyes.
+- **Natural emotions:** people in a group have different expressions; nobody laughs without a reason.
+- **New Sports and action style.** The Event style no longer forces flat, hazy light or laughing.
+- Clothes fit the place and weather.
+
 ## 1.0.0-beta.1 (2026-11-05)
 
 First public beta.
