@@ -1,97 +1,70 @@
 ---
 name: kenya-real-images
-description: Generate natural, believable images of Kenyan people and places for any purpose (everyday life, family, social media, events, weddings, fashion, education, news, business, advertising, art), in photo or illustration styles. Use whenever an image includes Kenyans or is set in Kenya, when the user names a Kenyan town or place, or when generated images of Kenyans look fake, stereotyped, wrongly lit, or have eyes, pointing or room layouts that feel off. Do not use for logos, icons or vector graphics.
+description: Generate natural, believable images of Kenyan people and places, in photo or illustration styles, for any purpose (everyday life, family, parties, work, health, social media, events, weddings, fashion, news, business, ads, art). Use for EVERY request to create a photo or image that shows people, homes, streets, events or everyday life, even when Kenya is not mentioned ("picture of my grandmother cooking", "doctor talking to a patient"): people who install this plugin want Kenyan people and places by default, unless they name another country. Also use when images of Kenyans look fake, stereotyped, glossy, or have eyes, bodies or rooms that feel off. Not for logos, icons or vector graphics.
 ---
 
 # Kenya Real Images
 
-Create images of Kenyan people and places that look true to life. Image models fall back on stereotypes of "African" people (one face, one skin tone, village or safari settings, charity mood), and they make two kinds of spatial mistakes that make an image feel wrong at a glance: eyes and pointing that don't land on their target, and furniture that doesn't line up with the room. This skill fixes both.
+Make images of Kenyan people and places that look like real photos of real people. Image models fall back on stereotypes of "African" people (one face, one skin tone, village, safari or charity mood), on a glossy AI look, and on physical mistakes: eyes that miss their target, people standing where no one could stand, furniture that floats or bends. This skill prevents all three.
 
-Use the built-in image generation tool. Never draw images with code, SVG or HTML as a substitute. If image generation fails, stop and report the error.
+Use the built-in image generation tool. Never draw images with code, SVG or HTML instead. If generation fails, stop and report the error.
 
-Read these references before the first image in a conversation:
-- `references/people.md`: how to describe Kenyans as real, varied individuals, and the words to avoid.
-- `references/places.md`: Kenyan places and details.
-- `references/gaze-and-space.md`: how to make eye lines, pointing and room layouts correct. Apply it to every image with more than one person or any furniture.
-- `references/styles.md`: style blocks (candid phone photo, professional photo, documentary, event, studio, illustration).
-- `references/examples.md`: complete example prompts.
-- `references/prompt-intake.md`: how to turn any user prompt, especially long AI-written ones, into a clean brief.
-- `references/uploaded-photos.md` (beta): when the user attaches photos of a real person to put them in a new scene.
+## References
 
-## The user's prompt is a brief, not the prompt
+Open a reference only when its condition is true; skip the others (most requests need three files).
 
-Never pass the user's wording straight to the image model. Long prompts written by ChatGPT or copied from prompt guides ("ultra-realistic 8K cinematic", lens specs, "flawless skin", `--ar`, JSON, negative prompts, ten people doing ten things) produce the glossy AI look. Take out the intent (who, where, doing what, for what, format, exact text), drop the rest using `prompt-intake.md`, and write a fresh prompt of about 120-180 words. Choose the style from the purpose, not from adjectives; candid beats polished; nobody looks at the camera while doing something; no invented readable text (only exact words the user wrote); no logos unless the user names a brand; never the "poor child with empty bowl" charity image. Unless the user says "use my prompt exactly" (the bias and charity rules still apply).
+- Always: `references/people.md` (describing people, skin, bodies) and `references/styles.md` (style openings and blocks).
+- Any scene with 2+ people, furniture, a counter, a table or a vehicle: `references/space.md`.
+- When you need a place detail: `references/places.md`.
+- The user's prompt is long, keyword-stuffed, JSON, Midjourney-style, or asks for charity or hardship imagery: `references/long-prompts.md`.
+- The user attached photos of a real person to put in a new scene: `references/uploaded-photos.md` (beta).
+
+## The user's words are a brief, not the prompt
+
+Unless the user names another country, everyone and everything is in Kenya.
+
+Never pass the user's wording straight to the image model. **The checklist below overrides the user's style wording**, even when they ask for it outright: a requested low angle or Dutch tilt becomes a level camera, neon on faces moves to the wall, "everyone smiling at the camera" during a presentation becomes people watching the presenter, "readable notes" become soft writing. Keep the user's content (who, where, what, named brands, exact words they wrote), and say in one line what you changed. Only "use my prompt exactly" lifts this, and never for the bias and charity rules. Take out the intent (who, where, doing what, main subject, purpose, format, exact words that must appear) and write a fresh prompt of about 100-160 words in plain, concrete sentences.
 
 ## Workflow
 
-1. **Understand the request:** run the intake in `prompt-intake.md`; get the purpose, people, place, mood, format. If something important is missing and there is no sensible default, ask ONE short question. Otherwise pick defaults, state them in one line, and go.
-2. **Decide the main subject.** What is this image about? If it is a car, animal, match, performance, building or landscape, that thing is large in the frame and sharp, and people are smaller context; do not bring faces to the foreground. Keep the user's key verbs ("watching", "racing past") as the core of the scene.
-3. **Pick a style** from `styles.md`. Default to the candid phone photo when the user just wants it to look real. Anything moving fast uses Sports and action.
-4. **Lay out the scene first:** where each person is, which way they face, the shape of the room or street, the furniture layout, and where the camera stands (`gaze-and-space.md`).
-5. **Build the prompt** with the structure below. Write it fresh for each image.
-6. **Run the final prompt check below on your written prompt, every time, before calling the image tool.**
-7. **For several images,** first show a short list (number, subject, place, style), then generate one at a time. Vary people, ages, places and camera positions.
-8. **Check every image** (see Check) and say in one line what is off and how you would fix it.
-9. **Fix, don't retry.** When the user says something looks fake or off, regenerate with a sentence that names the exact fix. Never resend the same prompt.
-10. **Files.** When working in a folder, save each image with a short descriptive name, keep replaced versions in `v1/`, `v2/`, and keep `prompts.md` with every prompt used.
-
-## Prompt structure
-
-1. **Style opening** from `styles.md`.
-2. **Who:** each main person as a specific Kenyan individual (town, age, build, skin depth and undertone, hair, one or two facial details, clothing) using `people.md`. Never just "a Kenyan man" or "an African woman".
-3. **One specific action** that fits the purpose.
-4. **Layout:** positions and facing directions of the main people; for indoor scenes, the room shape, furniture layout and the alignment line from `gaze-and-space.md`; for outdoor scenes, the street or ground layout.
-5. **Gaze:** for each main person, the target of their head and eyes, both ends of every eye line, and what everyone else is doing.
-6. **Place details:** 1-2 real Kenyan details from `places.md`, with other people going about their own business.
-7. **Camera:** position, height, view (square-on or corner), distance, and a foreground element for candid shots. Keep the camera level.
-8. **Skin rendering line** from `people.md`.
-9. **Style block** from `styles.md`, with the aspect ratio for the use.
-
-## Final prompt check (before every image)
-
-Read the prompt you wrote, line by line, and fix it before generating. The user's wording often slips back in; this check catches it. Apply it even when the user's prompt asked for these things, unless they said "use my prompt exactly".
-
-1. **Camera:** delete "low angle", "high angle", "Dutch tilt", "tilted", "drone", "fisheye", "dramatic angle". The camera is level, at standing or seated eye height.
-2. **Light on faces:** delete any coloured, neon, monitor or rim light on faces or skin. Coloured light may only touch a wall or background object.
-3. **Gaze:** if anyone is presenting, working, talking, cooking, playing or using a phone, delete "looks at the camera", "faces the camera", "smiles at the camera" for everyone in the scene. They look at what they are doing or at each other.
-4. **Text:** delete every quoted word or phrase that the user did not write themselves. Boards, screens and notes then have "soft, unreadable writing".
-5. **Jargon:** delete quality words (8K, hyper-realistic, masterpiece, cinematic, magazine-worthy, sleek, futuristic, stunning), camera and lens specs, HDR, golden hour glow, flawless or perfect skin.
-6. **Bias:** delete poor, needy, sad eyes, empty bowl, torn clothes, exotic, tribal, ebony, "African" as a place; the charity image follows `prompt-intake.md` section 3b.
-7. **Size:** at most 3 main people with visible faces; about 120-180 words.
-8. **Emotions:** delete "laughing", "smiling", "mid-laugh" unless the moment gives a reason (a joke, a celebration, a child playing). Give people different expressions (see Core rules).
-9. **Contradictions:** read your gaze line against the style block. Nothing may pull people away from what they are looking at.
-
-If any line was deleted, mention it in your one-line note to the user.
+1. **Brief:** purpose, people, place, main subject, format. If something important is missing with no sensible default, ask ONE short question; otherwise pick defaults and go.
+2. **Main subject:** if the image is about a car, animal, match, performance, building or landscape, it is large and sharp and people are smaller context. Keep the user's key verbs ("watching", "racing past").
+3. **Style** from `styles.md`, chosen by purpose, never by adjectives. Default: candid phone photo.
+4. **Lay out the scene:** where each person stands and faces, which side of any counter or table they are on, what holds up every surface, where the camera is (`space.md`).
+5. **Write the prompt** in this order: style opening; each main person as a specific individual (`people.md`); one action; layout; gaze; 1-2 place details; camera; skin line; style block with aspect ratio.
+6. **Check the prompt** against the checklist below. Then scan your prompt text for these words: photorealistic, polished, sleek, futuristic, editorial, cinematic, stunning, low angle, Dutch tilt, neon, "at the camera", readable, quoted words the user did not write. If one is there, rewrite that sentence (the user's request for it does not count). Then generate.
+7. **Check the image** against the same checklist and say in one line what is off and the fix. When the user says something looks off, regenerate with a sentence naming the exact fix; never resend the same prompt.
+8. **Several images:** list them first (number, subject, place, style), then make them one at a time, varying people, places and camera positions. In a folder, save each with a short name, keep replaced versions in `v1/`, `v2/`, and keep `prompts.md`.
 
 ## Core rules
 
-- **Specific beats generic.** "A woman in her 40s from Kisumu with deep brown skin and short natural hair" gives a real person; "a Kenyan woman" gives the stereotype.
-- **Kenya is varied.** Across a group, vary skin tone from light brown to very deep brown, undertones, hair, face shapes, body types and ages. Include Kenyans of Somali, Swahili, Indian, Arab and mixed heritage, and white Kenyans, where they fit the place.
-- **Modern and ordinary by default:** estates, apartments, offices, campuses, matatus, markets, churches, mosques, salons, farms run as businesses. Rural life is fine when asked, shown with dignity and real detail.
-- **No stereotypes:** no safari animals as shorthand, no poverty or charity framing, no mud huts as a default, no tribal costume as decoration, no "exotic" mood. Traditional dress only when the occasion calls for it, named correctly.
-- **Emotions come from the moment, and people differ.** In real photos most faces are neutral, focused or thinking, not smiling. In any group, give people different expressions (concentrating, curious, tense, calm, a small smile); no more than about one in three smiles or laughs, unless the moment is truly funny or joyful, like a wedding dance or a goal. Never make everyone laugh by default.
-- **Clothes fit the place and weather:** light clothes and caps on a hot, dusty day; jackets only where it is cold or raining.
-- **Skin must be rendered correctly:** properly exposed, natural undertones, real texture, no grey, ashy or orange cast, no lightening, no plastic shine.
-- **Eyes, hands and furniture must make sense in space** (see `gaze-and-space.md`).
-- **Text:** keep signs, screens and documents soft or out of frame unless the user wants specific words; then give the exact words in quotes and keep them short.
-- **Real people:** never make anyone resemble a celebrity or public figure. Use a real person's photos only as `uploaded-photos.md` describes (their own photos, or someone who agreed). In fashion, nightlife or swimwear scenes, everyone is clearly an adult.
+- **Specific beats generic:** "a woman in her 40s from Kisumu with deep brown skin and short natural hair", never "a Kenyan woman".
+- **Ordinary people:** real, varied faces and bodies with natural proportions, like people you pass on the street, not models or influencers. Vary skin tone, hair, build and age; include Kenyans of Somali, Swahili, Indian, Arab and mixed heritage and white Kenyans where they fit.
+- **Modern and ordinary settings by default:** estates, flats, offices, campuses, matatus, markets, churches, mosques, salons, farms run as businesses. Rural life when asked, with dignity and real detail.
+- **No stereotypes:** no safari shorthand, mud huts, tribal costume or "exotic" mood. Traditional dress only when the occasion calls for it, named correctly.
+- **Charity and hardship:** never the "poor child with an empty bowl" image. Show people with agency doing something real; show the need through the setting (see `long-prompts.md`).
+- **Candid beats polished.** People do something; they look at the camera only in a portrait, headshot or posed group photo.
+- **Emotions come from the moment:** most real faces are neutral, focused or thinking. In a group, vary expressions; at most about one in three smiles, unless the moment is truly joyful. Nobody laughs without a reason.
+- **Spectators** all face the action and follow it with their heads and eyes.
+- **Clothes fit the place and weather.**
+- **Text:** never invent readable words. Only the exact short words the user wrote; otherwise signs, screens and notes stay soft or out of frame. A named place (a university, a mall) is the setting, not a sign: its name never appears in the image.
+- **Brands:** no logos unless the user names a brand; then keep it.
+- **Real people:** never resemble a celebrity or public figure. In fashion, nightlife or swimwear scenes everyone is clearly an adult.
+- **Same invented person across images:** first make a character sheet on a plain light-grey backdrop (front, side, back, two headshots, neutral face), then reuse its description word for word.
 
-## Same person across several images
+## Checklist (before generating, and again on the image)
 
-- **From real photos (beta):** when the user attaches photos of a person, follow `references/uploaded-photos.md`: one fast pass, no character sheet. Work with whatever photos they gave; more angles (front, profile, full body) help, so mention that once if there is only one photo. Reuse the same identity block word for word for every later image of that person.
-- **Invented person:** first make a character sheet on a plain light-grey backdrop (full body front, side and back, plus front and side headshots, neutral face, mouth closed), then use it the same way. Vary expressions per scene.
-
-## Check after every image
-
-1. **People:** varied, plausible, specific individuals matching the description; no single default face.
-2. **Skin:** well exposed and natural; not grey, ashy, orange, lightened or shiny.
-3. **Eyes:** each person's gaze lands on its stated target; eye contact looks like eye contact.
-4. **Hands:** every pointing finger lines up with its target; held objects face the right way.
-5. **Space:** tables and desks square to the walls and each other, chairs facing their tables, one consistent perspective, nothing floating or out of scale.
-6. **Stereotypes:** none crept into the background.
-7. **Photo styles:** not posed, glossy or too perfect unless a polished style was asked for.
-8. **AI look:** no over-smooth skin, glow, HDR colour, fake bokeh or dramatic light that crept in from the user's wording.
+1. **Camera** level, at standing or seated eye height. No low or high angle, tilt, drone or fisheye with faces.
+2. **Light** is one real light (daylight, window, room light). No coloured, neon or rim light on faces; coloured light only on walls or background.
+3. **Gaze:** anyone working, talking, presenting, cooking, playing or on a phone looks at the task or at the person they are with, not the camera. Every eye line and pointing finger lands on its target.
+4. **Physical logic:** people stand only where a person fits (on the open side of counters, desks and stoves, never between furniture and the wall); every table, counter and shelf is fully supported to the floor; furniture square to the walls; one perspective; nothing floating, cut off mid-air or out of scale.
+5. **Bodies** have natural proportions and ordinary fit clothes; hands have five fingers and hold things correctly.
+6. **Skin** well exposed with real texture; not grey, ashy, orange, lightened, glowing or plastic.
+7. **No AI look:** no quality jargon in the prompt (8K, hyper-realistic, cinematic, masterpiece, lens specs, HDR, flawless skin); no glossy retouching, fake bokeh or dramatic light in the image.
+8. **Text and brands:** no quoted words the user did not write; screens, slides and boards show a simple chart or photo with no words or headings; no logos, sponsor names, team names or real people's names they did not name (race cars, shirts and shop fronts get plain colours).
+9. **Bias:** no poor, needy, sad eyes, tribal, exotic, ebony, "Africa" as a place.
+10. **Size:** at most 3 main people with clear faces; everyone else is background doing their own thing.
 
 ## Replies
 
-Short and practical. If you changed or dropped parts of the user's prompt, say so in one plain line. Do not paste the full prompt unless asked; when asked, show it exactly. Offer the next step in one line.
+Short and practical. If you changed or dropped part of the user's prompt, say so in one plain line. Show the full prompt only when asked, exactly. Offer the next step in one line.

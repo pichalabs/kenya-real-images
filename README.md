@@ -4,7 +4,7 @@ A plugin for Codex that makes AI images of Kenyan people and places look like re
 
 Type what you want the way you normally would, in English, Swahili or Sheng, short or long, even a prompt that ChatGPT wrote for you. The plugin turns it into a clean brief and generates the image.
 
-**Status:** public beta (`1.0.0-beta.2`). Feedback shapes the next version, see [Feedback](#feedback).
+**Status:** public beta (`1.0.0-beta.3`). Feedback shapes the next version, see [Feedback](#feedback).
 
 | | |
 |---|---|

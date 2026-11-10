@@ -1,61 +1,70 @@
 # Styles
 
-Pick one style per image. Use its opening and block word for word, then set the aspect ratio for the use: 3:2 wide (web, slides), 2:3 or 4:5 tall (posters, portraits, Instagram), 1:1 square (profile, social), 9:16 (phone stories).
+Pick one style by purpose. Use its opening first and its block last, word for word, then the aspect ratio: 3:2 (web, slides), 4:5 or 2:3 (portraits, posters, Instagram), 1:1 (profile, social), 9:16 (stories).
 
-All styles: keep the camera level (no tilt), and use one consistent perspective. A tilted camera makes the model bend furniture, tables and floors into wrong angles. See `gaze-and-space.md`.
+| Purpose | Style |
+|---|---|
+| Anything that should "look real"; everyday, family, social media, website; also prompts that only say editorial, cinematic, portrait, polished, magazine | 1 Candid phone |
+| Outfit, fashion or "photo shoot" of a person, influencer or student look, OOTD | 2 Outfit photo |
+| Headshot, profile picture, wedding photographer, product shot, or a named ad or campaign where the user asks for a professional or studio look | 3 Professional |
+| News, reports, NGO and charity stories | 4 Documentary |
+| Events and crowds | 5 Event |
+| Races, rallies, matches, anything moving fast | 6 Sports |
+| Character sheet | 7 Studio |
+| Any drawn or painted look | 8 Illustration |
 
-## 1. Candid phone photo (default when the user wants it to look real)
+## 1. Candid phone photo (default)
 
 Opening: Generate an image that looks like an ordinary unedited smartphone photo a friend took, not a professional or AI image.
 
 Block: Realism requirements: natural uneven daylight or plain indoor light with real shadows, level camera with the subject a little off-centre, someone or something partly cut off at the edge, mild phone noise and JPEG compression, real skin texture with pores, creased clothes and worn everyday details, ordinary-looking people rather than models, no beauty retouching, no cinematic bokeh, no glossy AI look, no perfect symmetry, one consistent perspective with furniture and walls lined up correctly.
 
-Notes: daylight outdoors or plain window light works best. Avoid film, flash, golden hour, cinematic or moody light in this style; they make it look fake.
+Daylight or plain window light works best. No film, flash, golden hour or moody light in this style.
 
-## 2. Professional photo (headshots, weddings, fashion, products, named ads and campaigns)
+## 2. Outfit photo (fashion and "photo shoot" of a person)
 
-Not for prompts that only say "editorial", "cinematic", "portrait" or "polished"; those get the candid phone style (see `prompt-intake.md`).
+Opening: Generate an image that looks like a real outfit photo a friend took on a smartphone for Instagram, not a professional fashion shoot or an AI image.
 
-Opening: Generate a professional photograph taken by a skilled photographer on a full-frame camera.
+Describe the person as an ordinary young adult with a natural, everyday body (for example "average build, natural waist and hips, relaxed shoulders") and clothes that fit loosely the way real clothes do. Give a relaxed stance (weight on one leg, a hand in a pocket, glancing to the side or a small natural smile), not a model pose.
 
-Block: Photography requirements: exposed for the darkest skin tone in the frame, soft natural or softbox light that shapes the face, accurate colour, real skin texture with pores kept (light retouching only, no airbrushing), natural expressions rather than stiff poses, clean, level composition, shallow depth of field only where it helps, no glossy AI look, no plastic skin, no over-sharpening.
+Block: Realism requirements: plain daylight with soft real shadows, level camera at chest height about three metres away, full body in frame with the feet on the ground, an ordinary real background with people going about their day, real skin texture, fabric with real creases and folds, ordinary proportions, no model body, no beauty retouching, no glossy AI look, mild phone noise.
 
-Variants: "editorial fashion photo", "corporate headshot on a plain grey backdrop", "wedding photographer's candid moment during the reception", "product shot in a real Kenyan home".
+## 3. Professional photo
 
-## 3. Documentary or news photo
+Opening: Generate a real, lightly edited photograph by a working Kenyan photographer, the kind used in a real client's work, not a glossy AI image.
+
+Block: Photography requirements: soft natural or window light exposed for the darkest skin tone, accurate colour, real skin texture with pores (no airbrushing), ordinary proportions, natural expressions, level composition, real background, no glow, no plastic skin, no over-sharpening.
+
+Variants: "corporate headshot on a plain grey backdrop", "wedding photographer's candid moment at the reception", "product shot in a real Kenyan home".
+
+## 4. Documentary or news photo
 
 Opening: Generate a documentary photograph of a real moment, taken by a photojournalist.
 
-Block: Documentary requirements: available light only, people absorbed in what they are doing and unaware of the camera, honest framing with real context around the subject, natural colour, real texture, no staging, no glamour, no misery framing, everyone shown with dignity.
+Block: Documentary requirements: available light only, people absorbed in what they are doing and unaware of the camera, real context around the subject, natural colour, real texture, no staging, no glamour, no misery framing, everyone shown with dignity.
 
-## 4. Event and crowd photo
+## 5. Event and crowd photo
 
-Opening: Generate a candid event photo taken from a distance on a telephoto lens by a photographer the subjects have not noticed.
+Opening: Generate a candid event photo taken from a distance by a photographer the subjects have not noticed.
 
-Block: Look and feel: the real light and colour of that place and hour, matte skin with natural texture, no glow, people absorbed in the event with a natural mix of expressions, never walking toward the camera like a fashion shoot, other people partly cut off at the edges and crossing in front.
+Block: Look and feel: the real light and colour of that place and hour, matte skin with natural texture, people absorbed in the event with a natural mix of expressions, others partly cut off at the edges and crossing in front.
 
-## 4b. Sports and action photo (rallies, races, football, athletics, anything moving fast)
+## 6. Sports and action photo
 
-Opening: Generate a sports press photograph taken from the side of the action on a long lens, at the peak moment.
+Opening: Generate a sports press photograph taken from the side of the action at the peak moment.
 
-Block: Look and feel: bright natural light with true, full colour, the moving subject sharp and large in the frame, real motion such as flying dust, gravel, mud, spray or grass, a clear sense of speed, spectators smaller and behind the barrier, natural skin texture, no glow, no HDR.
+Block: Look and feel: bright natural light with true colour, the moving subject sharp and large in the frame, real motion (dust, gravel, mud, spray), spectators smaller and behind the barrier, all facing the action, plain-coloured vehicles and kit without readable sponsor names, natural skin texture, no HDR.
 
-## 5. Studio portrait or character sheet
+## 7. Studio or character sheet
 
-Block: Plain light-grey seamless backdrop, soft even studio light, the full person in frame, neutral expression with the mouth closed, accurate skin tone and texture, no props.
+Block: Plain light-grey seamless backdrop, soft even light, the full person in frame, neutral expression with the mouth closed, accurate skin tone and texture, no props.
 
-## 6. Illustration and art styles
+## 8. Illustration
 
-Flat editorial illustration block: A flat editorial illustration with a printed, risograph or screen-print feel. Bold flat areas of colour with no outlines and no smooth gradients, and a fine grain over the whole image. Many small hand-made texture marks give depth. People are drawn with real, varied features, skin tones and hair, not as one generic figure. No text or letters.
+Name the style directly: flat editorial illustration with risograph grain, children's book watercolour, gouache, linocut, comic panels, oil portrait, 3D animated film style, Afrofuturist painting (real, specific people, not costume). Still describe people with `people.md`. Brand colours as hex codes with a limited palette. No text unless the user gave the words. Avoid "techy", "futuristic" or "digital" unless wanted; they pull in neon and circuit boards.
 
-Other styles to name directly when asked: children's book watercolour, gouache painting, pop-art poster, Afrofuturist digital painting (real, specific people, not costume), 3D animated film style, comic panels, line drawing, oil portrait, linocut print. For any drawn style, still describe people with people.md.
+## Composition notes
 
-Brand colours: give hex codes and limit the palette.
-
-Avoid "techy", "futuristic" or "digital" unless the user wants that look; they pull in circuit boards and neon. Show the idea through a scene instead.
-
-## Other composition notes
-
-- **Space for text:** for posters, banners and footers, say where to leave empty space ("calm empty space on the left third", "a low horizon with an empty flat sky above").
-- **Small images (thumbnails, cards):** fewer and larger faces, or hands, objects and people from behind.
-- **Words in the image:** if the user wants text, give the exact words in quotes and keep them short; otherwise keep signs, screens and documents soft or out of frame.
+- **Space for text:** say where ("calm empty space on the left third").
+- **Small images:** fewer, larger faces, or hands and objects.
+- **Words the user wants:** give them in quotes, short.

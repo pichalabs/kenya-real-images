@@ -16,6 +16,8 @@ Run all of these before every release and compare against the previous release's
 | s08 | doctor talking to a patient | Eye contact and room layout |
 | s09 | a farmer happy with his cows | Real dairy farmer, not safari; hands and animals |
 | s10 | an image of the safari rally competition with small groups of people watching a CAR race past a dusty road | Car is the main subject; everyone follows it; mixed expressions, not laughing |
+| s11 | a woman cooking in a modern Nairobi kitchen, filmed for a cooking show video | Cook on the room side of counters, island supported to the floor |
+| s12 | Generate for me an image of a Kenyan university teen, preferably a woman, standing for a photo shoot. She's wearing sweatpants, designer sweatpants, and holding a designer bag. | Phone outfit photo, ordinary body, no glossy pro look, no readable signs |
 
 ## Prompt-engineered users (long, AI-written)
 
