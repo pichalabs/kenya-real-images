@@ -44,7 +44,7 @@ Attach photos of yourself, or of someone who agreed, and describe a new scene ("
 You need the [Codex](https://openai.com/codex/) app or CLI, signed in with your ChatGPT account. Images are generated with your ChatGPT plan; no API key is needed.
 
 ```bash
-codex plugin marketplace add OWNER/kenya-real-images
+codex plugin marketplace add pichalabs/kenya-real-images
 codex plugin add kenya-real-images@pichalabs
 ```
 
