@@ -19,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Kenya Real Images",
-    "shortDescription": "Natural, believable images of Kenyan people and places.",
-    "longDescription": "Image models fall back on stereotypes of African people and make spatial mistakes that feel wrong at a glance: eyes that don't land on the person they look at, pointing that misses its target, and furniture at odd angles to the room. This plugin describes Kenyans as real, varied individuals anchored to real places, renders every skin tone correctly, lays out people, furniture and camera before writing gaze, and checks and fixes each image. It rewrites long AI-generated prompts into plain briefs so results look like real photos, not glossy AI images. Works for everyday photos, family portraits, weddings, fashion, news, education, business, social media and illustration. It can also put you (or someone who agreed) into a new scene from your own photos. A PichaLabs project.",
+    "shortDescription": "Real-looking images of Kenya",
+    "longDescription": "Image models often fall back on stereotypes of African people and make spatial mistakes, such as eyes that miss the person they look at or furniture at odd angles. Kenya Real Images helps ChatGPT describe Kenyans as varied individuals in real Kenyan places, with natural skin tones, and plan people, furniture and camera before generating. It rewrites long, keyword-heavy prompts into plain briefs, aiming for images that look like real photos rather than glossy AI images. For everyday photos, family portraits, weddings, fashion, news, education, business, social media and illustration. You can also ask for a new scene of yourself, or someone who agreed, from your own photos. Results vary, and you can ask for fixes. A PichaLabs project.",
     "developerName": "PichaLabs",
     "category": "Design",
     "capabilities": [
@@ -31,8 +31,7 @@
     "defaultPrompt": [
       "A candid photo of two friends talking over chai in a Kilimani cafe.",
       "A Sunday family lunch in a Buruburu flat.",
-      "A trainer speaking to a full church hall in Nakuru.",
-      "A children's book illustration of a boy in Kisumu building a toy boat."
+      "A trainer speaking to a full church hall in Nakuru."
     ],
     "brandColor": "#04224E",
     "privacyPolicyURL": "https://pichalabs.github.io/kenya-real-images/privacy.html",
