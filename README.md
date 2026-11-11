@@ -4,7 +4,7 @@ A plugin for Codex that makes AI images of Kenyan people and places look like re
 
 Type what you want the way you normally would, in English, Swahili or Sheng, short or long, even a prompt that ChatGPT wrote for you. The plugin turns it into a clean brief and generates the image.
 
-**Status:** public beta (`1.0.0-beta.3`). Feedback shapes the next version, see [Feedback](#feedback).
+**Status:** `1.0.0`. A PichaLabs project. Feedback shapes the next version, see [Feedback](#feedback). Website, privacy policy and terms: [pichalabs.github.io/kenya-real-images](https://pichalabs.github.io/kenya-real-images/).
 
 | | |
 |---|---|
@@ -35,7 +35,7 @@ Many people ask ChatGPT to write their image prompt. Those prompts are packed wi
 
 If you really want your exact wording, say **"use my prompt exactly"**. The bias and skin rules still apply.
 
-### Your own photos (beta)
+### Your own photos
 
 Attach photos of yourself, or of someone who agreed, and describe a new scene ("me teaching a class in Nakuru"). The plugin reads your face and body from the photos and avoids the "pasted face" look. More photos from different angles (front, side, full body) give a better likeness.
 

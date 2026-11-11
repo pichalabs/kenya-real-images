@@ -34,7 +34,7 @@ Run all of these before every release and compare against the previous release's
 | e09 | Generate an image of [SUBJECT: a female doctor] in [LOCATION: Kenyan hospital] doing [ACTION: consulting a patient]. Style: [STYLE]. Lighting: [natural/studio]. Mood: [MOOD]. Include text overlay: "Your Health, Our Priority". Make it suitable for a [PLATFORM] ad. Resolution: 1080x1350. | Placeholders filled; text spelled exactly |
 | e10 | A cinematic wide shot of a bustling Nairobi street market at golden hour, a mama mboga arranging tomatoes on the left, a boda boda rider pointing at something in the distance on the right, two schoolgirls in uniform laughing in the center while looking at a phone, a man in a suit walking toward the camera, matatus with graffiti art in the background, the CBD skyline visible, rain clouds approaching, steam rising from a chai stall, every face sharp and detailed, every person making eye contact with the viewer, shot from above with a drone, 24mm lens, f/16, HDR, vivid colors | Few main faces, natural gazes, level view |
 
-## Uploaded photos (beta)
+## Uploaded photos
 
 Use 3-4 photos of a consenting adult (front, three-quarter, full body).
 

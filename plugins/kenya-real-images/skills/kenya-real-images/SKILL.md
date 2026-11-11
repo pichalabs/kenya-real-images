@@ -17,7 +17,7 @@ Open a reference only when its condition is true; skip the others (most requests
 - Any scene with 2+ people, furniture, a counter, a table or a vehicle: `references/space.md`.
 - When you need a place detail: `references/places.md`.
 - The user's prompt is long, keyword-stuffed, JSON, Midjourney-style, or asks for charity or hardship imagery: `references/long-prompts.md`.
-- The user attached photos of a real person to put in a new scene: `references/uploaded-photos.md` (beta).
+- The user attached photos of a real person to put in a new scene: `references/uploaded-photos.md`.
 
 ## The user's words are a brief, not the prompt
 

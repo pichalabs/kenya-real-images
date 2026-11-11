@@ -1,4 +1,4 @@
-# Uploaded photos of a person (beta)
+# Uploaded photos of a person
 
 The user attached photos of a real person and wants them in a new scene. Generate ONE image straight away: no character sheet, no preview round. Think silently, then generate. The SKILL.md checklist still applies. If there is only one photo, mention once that front, profile and full-body photos help.
 

@@ -1,32 +1,44 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "kenya-real-images",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "description": "Generate natural, believable images of Kenyan people and places for any purpose, with correct eye lines, pointing and room layouts.",
   "author": {
     "name": "PichaLabs",
     "url": "https://github.com/pichalabs"
   },
-  "homepage": "https://github.com/pichalabs",
+  "homepage": "https://pichalabs.github.io/kenya-real-images/",
   "license": "UNLICENSED",
-  "keywords": ["image-generation", "kenya", "nairobi", "representation", "photography", "illustration"],
+  "keywords": [
+    "image-generation",
+    "kenya",
+    "nairobi",
+    "representation",
+    "photography",
+    "illustration"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Kenya Real Images",
         "shortDescription": "Natural, believable images of Kenyan people and places.",
-        "longDescription": "Image models fall back on stereotypes of African people and make spatial mistakes that feel wrong at a glance: eyes that don't land on the person they look at, pointing that misses its target, and furniture at odd angles to the room. This plugin describes Kenyans as real, varied individuals anchored to real places, renders every skin tone correctly, lays out people, furniture and camera before writing gaze, and checks and fixes each image. It rewrites long AI-generated prompts into plain briefs so results look like real photos, not glossy AI images. Works for everyday photos, family portraits, weddings, fashion, news, education, business, social media and illustration. Beta: put yourself (or someone who agreed) into a new scene from your own photos.",
+        "longDescription": "Image models fall back on stereotypes of African people and make spatial mistakes that feel wrong at a glance: eyes that don't land on the person they look at, pointing that misses its target, and furniture at odd angles to the room. This plugin describes Kenyans as real, varied individuals anchored to real places, renders every skin tone correctly, lays out people, furniture and camera before writing gaze, and checks and fixes each image. It rewrites long AI-generated prompts into plain briefs so results look like real photos, not glossy AI images. Works for everyday photos, family portraits, weddings, fashion, news, education, business, social media and illustration. It can also put you (or someone who agreed) into a new scene from your own photos. A PichaLabs project.",
         "developerName": "PichaLabs",
         "category": "Design",
-        "capabilities": ["Interactive", "Write"],
-        "websiteURL": "https://github.com/pichalabs",
+        "capabilities": [
+          "Interactive",
+          "Write"
+        ],
+        "websiteURL": "https://pichalabs.github.io/kenya-real-images/",
         "defaultPrompt": [
           "A candid photo of two friends talking over chai in a Kilimani cafe.",
           "A Sunday family lunch in a Buruburu flat.",
           "A trainer speaking to a full church hall in Nakuru.",
           "A children's book illustration of a boy in Kisumu building a toy boat."
         ],
-        "brandColor": "#04224E"
+        "brandColor": "#04224E",
+        "privacyPolicyURL": "https://pichalabs.github.io/kenya-real-images/privacy.html",
+        "termsOfServiceURL": "https://pichalabs.github.io/kenya-real-images/terms.html"
       }
     }
   }

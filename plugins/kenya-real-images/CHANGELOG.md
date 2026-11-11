@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2026-11-11)
+
+First stable release, prepared for the OpenAI Plugins Directory. Same skill as 1.0.0-beta.3, out of beta.
+
+- **Out of beta:** uploaded-photo mode is now a regular feature.
+- **Website, privacy policy and terms:** published at https://pichalabs.github.io/kenya-real-images/ and linked from the plugin manifest. Support is through GitHub Issues.
+
 ## 1.0.0-beta.3 (2026-11-10)
 
 Fixes images that looked fake or AI-made, and cuts the skill from about 12,300 to 7,200 tokens.
