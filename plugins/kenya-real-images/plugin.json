@@ -24,7 +24,7 @@
         "shortDescription": "Real-looking images of Kenya",
         "longDescription": "Image models often fall back on stereotypes of African people and make spatial mistakes, such as eyes that miss the person they look at or furniture at odd angles. Kenya Real Images helps ChatGPT describe Kenyans as varied individuals in real Kenyan places, with natural skin tones, and plan people, furniture and camera before generating. It rewrites long, keyword-heavy prompts into plain briefs, aiming for images that look like real photos rather than glossy AI images. For everyday photos, family portraits, weddings, fashion, news, education, business, social media and illustration. You can also ask for a new scene of yourself, or someone who agreed, from your own photos. Results vary, and you can ask for fixes. A PichaLabs project.",
         "developerName": "PichaLabs",
-        "category": "Design",
+        "category": "Creativity",
         "capabilities": [
           "Interactive",
           "Write"
@@ -37,7 +37,10 @@
         ],
         "brandColor": "#04224E",
         "privacyPolicyURL": "https://pichalabs.github.io/kenya-real-images/privacy.html",
-        "termsOfServiceURL": "https://pichalabs.github.io/kenya-real-images/terms.html"
+        "termsOfServiceURL": "https://pichalabs.github.io/kenya-real-images/terms.html",
+        "supportURL": "https://pichalabs.github.io/kenya-real-images/support.html",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
       }
     }
   }

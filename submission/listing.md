@@ -6,7 +6,7 @@ Copy these into the OpenAI Platform plugin submission form.
 |---|---|
 | Plugin name | Kenya Real Images |
 | Developer / publisher | PichaLabs (must match the verified business name exactly) |
-| Category | Pick the closest option in the form's dropdown (Design was rejected as invalid) |
+| Category | Creativity (allowed: Productivity, Creativity, Developer Tools, Business & Operations, Data & Analytics, Communication, Education & Research, Security, Finance, Healthcare, Travel, Entertainment, Other) |
 | Version | 1.0.0 |
 | Website | https://pichalabs.github.io/kenya-real-images/ |
 | Support URL | https://pichalabs.github.io/kenya-real-images/support.html |
