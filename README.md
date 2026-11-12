@@ -13,6 +13,21 @@ Type what you want the way you normally would, in English, Swahili or Sheng, sho
 | ![A family dinner in a Nairobi flat](docs/images/family-dinner.jpg) | ![A busy Nairobi market lane](docs/images/market.jpg) |
 | *A family dinner prompt whose negative prompt said "poor, dirty, slum"* | *An overloaded 12-instruction street prompt, cut down to one real moment* |
 
+## Compared with free ChatGPT
+
+Same prompt, free ChatGPT without the plugin (left) and with Kenya Real Images (right).
+
+| Free ChatGPT | Kenya Real Images |
+|---|---|
+| ![Free ChatGPT: smiling kids under an invented NGO banner](docs/images/compare/05-free.jpg) | ![Plugin: a woman filling a jerrycan at a water point](docs/images/compare/05-plugin.jpg) |
+| *"An image for our NGO report about clean water in rural Kenya."* Invented banner, flag, posed smiles | A woman fetching water, no slogans |
+| ![Free ChatGPT: flags and banners at a football screening](docs/images/compare/08-free.jpg) | ![Plugin: fans in a local bar reacting to a goal](docs/images/compare/08-plugin.jpg) |
+| *"Picha ya wasee wakiangalia mechi ya Harambee Stars kwa local..."* Flags and face paint everywhere | A real local |
+| ![Free ChatGPT: neon tech team grinning at the camera](docs/images/compare/07-free.jpg) | ![Plugin: an ordinary office team](docs/images/compare/07-plugin.jpg) |
+| *A long "8K, cinematic, flawless skin, neon" prompt.* KICC, invented logos | An ordinary office |
+
+More in depth: [all 10 prompts across free ChatGPT, ChatGPT with Think, ChatGPT Pro/Business and the plugin](https://pichalabs.github.io/kenya-real-images/compare.html), including where the plugin doesn't help.
+
 ## What it fixes
 
 Image models get Kenyans wrong in predictable ways. This plugin fixes:

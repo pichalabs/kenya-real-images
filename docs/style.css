@@ -44,3 +44,10 @@ figcaption { padding: 8px 12px; font-size: 14px; color: var(--muted); }
 pre { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 12px; overflow-x: auto; font-size: 14px; }
 footer { border-top: 1px solid var(--line); padding: 20px 0 32px; font-size: 14px; color: var(--muted); }
 footer a { color: var(--muted); }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 28px; }
+.pair .prompt { grid-column: 1 / -1; margin: 0; font-style: italic; color: var(--muted); }
+.pair figure img { aspect-ratio: auto; object-fit: contain; }
+@media (max-width: 560px) { .pair { grid-template-columns: 1fr; } }
+.quad { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0 8px; }
+.quad figure img { aspect-ratio: auto; object-fit: contain; }
+.note { font-size: 15px; margin: 0 0 32px; }
