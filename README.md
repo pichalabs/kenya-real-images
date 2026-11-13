@@ -72,7 +72,7 @@ It is not in the public ChatGPT plugin directory yet, so you can't install it fr
 3. Select **Create**, then **Upload from your computer**, and choose the ZIP.
 4. Wait for the scan to finish, then start a new chat and ask for an image, for example: *"A photo for my salon's Instagram: a stylist braiding a client's hair in a small salon in Eastleigh."*
 
-Workspace admins can also add it for everyone: **Admin console → Plugins → Add → Upload plugin**, with the plugin ZIP built from [`plugins/kenya-real-images`](plugins/kenya-real-images).
+Workspace admins can also add it for everyone: **Admin console → Plugins → Add → Upload plugin**, with the plugin ZIP: [kenya-real-images-plugin.zip](https://pichalabs.github.io/kenya-real-images/downloads/kenya-real-images-plugin.zip). Use the skill ZIP for **Skills → Upload** and the plugin ZIP for **Plugins → Upload plugin**; they are not interchangeable.
 
 ### Codex (plugin)
 

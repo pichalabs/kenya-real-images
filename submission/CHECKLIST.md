@@ -19,5 +19,5 @@ Only you can do:
 Rebuild the ZIP (from the repo root):
 
 ```bash
-python -c "import zipfile,os;z=zipfile.ZipFile('submission/kenya-real-images-1.0.0.zip','w',zipfile.ZIP_DEFLATED);[z.write(os.path.join(d,f),os.path.relpath(os.path.join(d,f),'plugins')) for d,_,fs in os.walk('plugins/kenya-real-images') for f in fs]"
+python -c "import zipfile,os;r='plugins/kenya-real-images';z=zipfile.ZipFile('submission/kenya-real-images-1.0.0.zip','w',zipfile.ZIP_DEFLATED);[z.write(os.path.join(d,f),os.path.relpath(os.path.join(d,f),r).replace(os.sep,'/')) for d,_,fs in os.walk(r) for f in fs]"
 ```
