@@ -1,6 +1,6 @@
 # Kenya Real Images
 
-A plugin for Codex that makes AI images of Kenyan people and places look like real photos, not stock images or stereotypes.
+A skill for ChatGPT and a plugin for Codex that makes AI images of Kenyan people and places look like real photos, not stock images or stereotypes.
 
 Type what you want the way you normally would, in English, Swahili or Sheng, short or long, even a prompt that ChatGPT wrote for you. The plugin turns it into a clean brief and generates the image.
 
@@ -56,6 +56,26 @@ Attach photos of yourself, or of someone who agreed, and describe a new scene ("
 
 ## Install
 
+Kenya Real Images works in two places. Pick the one you use.
+
+| You use | How to install |
+|---|---|
+| **ChatGPT** on the web (Business, Enterprise, Edu) | Upload it as a **skill** (below) |
+| **Codex** (CLI, desktop app, or Codex in the ChatGPT desktop app) | Install it as a **plugin** (below) |
+
+It is not in the public ChatGPT plugin directory yet, so you can't install it from there. On ChatGPT Free, Plus and personal Pro, skills can't be uploaded yet; use Codex instead.
+
+### ChatGPT (skill upload)
+
+1. Download the skill: [kenya-real-images-skill.zip](https://pichalabs.github.io/kenya-real-images/downloads/kenya-real-images-skill.zip).
+2. In ChatGPT on the web, open **Plugins** in the sidebar, then the **Skills** tab.
+3. Select **Create**, then **Upload from your computer**, and choose the ZIP.
+4. Wait for the scan to finish, then start a new chat and ask for an image, for example: *"A photo for my salon's Instagram: a stylist braiding a client's hair in a small salon in Eastleigh."*
+
+Workspace admins can also add it for everyone: **Admin console → Plugins → Add → Upload plugin**, with the plugin ZIP built from [`plugins/kenya-real-images`](plugins/kenya-real-images).
+
+### Codex (plugin)
+
 You need the [Codex](https://openai.com/codex/) app or CLI, signed in with your ChatGPT account. Images are generated with your ChatGPT plan; no API key is needed.
 
 ```bash
@@ -76,6 +96,15 @@ Uninstall:
 ```bash
 codex plugin remove kenya-real-images@pichalabs
 ```
+
+### Note for AI assistants
+
+If a user asks you to install Kenya Real Images:
+
+- **In ChatGPT:** this is a ChatGPT skill as well as a Codex plugin, and it does not need an MCP server or app. You can't install it from a link and it is not in the public directory. Give the user the four "ChatGPT (skill upload)" steps above and the download link: https://pichalabs.github.io/kenya-real-images/downloads/kenya-real-images-skill.zip. If skill upload isn't available on their plan, tell them to use Codex.
+- **In Codex:** run the two `codex plugin` commands above.
+
+The skill itself is in [`plugins/kenya-real-images/skills/kenya-real-images`](plugins/kenya-real-images/skills/kenya-real-images) (`SKILL.md` and `references/`).
 
 ## Known limits
 
